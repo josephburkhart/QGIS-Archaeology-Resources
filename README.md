@@ -5,5 +5,5 @@ This repository follows the structure required by the popular QGIS plugin [QGIS 
 # Licensing
 This repository is currently covered by two licenses:
 
-- `LICENSE.sourcessvgs.md`:  covers the contents of the directory `\collections\Sources\svg`
-- `LICENSE.othermaterials.md`: covers all other contents of this repository
+- `LICENSE.sourcessvgs.md`:  covers the contents of the directory `/collections/Sources/svg`
+- `LICENSE.othercontents.md`: covers all other contents of this repository

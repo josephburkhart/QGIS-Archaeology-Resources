@@ -5,6 +5,5 @@ This repository follows the structure required by the popular QGIS plugin [QGIS 
 # Licensing
 This repository is currently covered by two licenses:
 
-- `SourcesLicense`
-
-The contents of directory `\collections\Sources\svg` including the Sources Logo, are currently property of [Sources Archaeological and Heritage Research](http://www.sourcesarch.com/), and may not be u
+- `LICENSE.sourcessvgs.md`:  covers the contents of the directory `\collections\Sources\svg`
+- `LICENSE.othermaterials.md`: covers all other contents of this repository

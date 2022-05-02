@@ -1,3 +1,6 @@
+    **The following license applies to all contents of this repository that are not 
+    explicitly covered by another license.**
+    
     Attribution 4.0 International
     
     =======================================================================

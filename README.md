@@ -7,3 +7,6 @@ This repository is currently covered by two licenses:
 
 - `LICENSE.sourcessvgs.md`:  covers the contents of the directory `/collections/Sources/svg`
 - `LICENSE.othercontents.md`: covers all other contents of this repository
+
+# Compatibility
+The symbol sets in this repository are compatible with QGIS versions 3.16 and later

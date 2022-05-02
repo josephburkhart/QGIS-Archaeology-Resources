@@ -2,3 +2,9 @@ This repository contains QGIS symbol sets, composer templates, and SVG files for
 
 This repository follows the structure required by the popular QGIS plugin [QGIS Resource Sharing](https://plugins.qgis.org/plugins/qgis_resource_sharing/), so QGIS users should be able to install this repository using that plugin.
 
+# Licensing
+This repository is currently covered by two licenses:
+
+- `SourcesLicense`
+
+The contents of directory `\collections\Sources\svg` including the Sources Logo, are currently property of [Sources Archaeological and Heritage Research](http://www.sourcesarch.com/), and may not be u

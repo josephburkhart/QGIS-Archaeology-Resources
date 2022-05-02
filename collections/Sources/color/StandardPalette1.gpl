@@ -1,0 +1,22 @@
+GIMP Palette
+Name: QGIS Palette
+Columns: 4
+#
+255   0   0	red
+  0   0   0	black
+255 170   0	gold
+255 255   0	area of potential yellow
+  0  77 168	dark blue
+151 219 242	light blue
+178 178 178	grey
+255 255 255	white
+255 127 127	light red
+191 200 223	blue-grey
+  4  61  25	traditional use site green
+153 204 153	retention green
+135 191  98	ethnographic green
+ 35  96  46	historic green
+102 155  50	vegetation green
+247 247 170	legal yellow
+255 240 194	previously-logged tan
+245 139  36	orange

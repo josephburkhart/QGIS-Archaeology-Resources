@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.76" height="10.67" viewBox="0 0 11.76 10.67">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="New_Legend" data-name="New Legend">
+      <g>
+        <polyline points="11.76 10.67 9.73 4.9 11.76 0 0 0 1.91 4.87 0 10.67 11.76 10.67" style="fill: #743b22"/>
+        <polyline points="10.42 9.84 10.67 9.77 9.33 4.88 10.77 0.58 1.03 0.58 2.33 4.88 1.05 10.09 10.75 10.09 10.67 9.77 10.42 9.84 10.42 9.59 1.69 9.59 2.85 4.87 1.7 1.08 10.08 1.08 8.81 4.87 10.18 9.9 10.42 9.84 10.42 9.59 10.42 9.84" style="fill: #fff"/>
+        <text transform="translate(3.34 7.41)" style="font-size: 6.999500274658203px;fill: #fff;font-family: Arial-Black, Arial;font-weight: 800">S</text>
+      </g>
+    </g>
+  </g>
+</svg>

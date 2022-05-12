@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.01" height="25.44" viewBox="0 0 37.01 25.44">
+  <defs>
+    <linearGradient id="New_Gradient_Swatch_1" data-name="New Gradient Swatch 1" x1="541.53" y1="-323.11" x2="566.7" y2="-323.11" gradientTransform="translate(-309.22 -538.72) rotate(89.52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eceeef"/>
+      <stop offset="0.48" stop-color="#bfbebe"/>
+      <stop offset="0.56" stop-color="#919191"/>
+      <stop offset="1" stop-color="#6d6d6d"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="New_Legend" data-name="New Legend">
+      <path d="M25.87,5,31,9l4.67,5.1L36.77,20l-.23,2.82-2.3,1.82-3.07.54L26,22.93l-2.84-2.8a36.39,36.39,0,0,1-3.87-1.77,24.5,24.5,0,0,0-6.18-2A23.64,23.64,0,0,1,9,15.63c-.77-.25-7.2-2-7.2-2S.26,12.87.24,10.31.93.55.93.55,3.76,1,5,.51s.26-.26,5.4.47a32.3,32.3,0,0,1,8.75,2.49Z" stroke="#231f20" stroke-width="0.47" fill="url(#New_Gradient_Swatch_1)"/>
+    </g>
+  </g>
+</svg>

@@ -1,8 +1,8 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol name="CMT (Other)" clip_to_extent="1" tags="Sources,point" alpha="1" type="marker" force_rhr="0">
-      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="marker" name="CMT (Other)" tags="Sources,point">
+      <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
         <prop v="0" k="angle"/>
         <prop v="0,0,0,255" k="color"/>
         <prop v="1" k="horizontal_anchor_point"/>
@@ -23,13 +23,13 @@
         <prop v="1" k="vertical_anchor_point"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
-      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+      <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
         <prop v="0" k="angle"/>
         <prop v="255,0,0,255" k="color"/>
         <prop v="1" k="horizontal_anchor_point"/>
@@ -50,15 +50,15 @@
         <prop v="1" k="vertical_anchor_point"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="CMT (Pitch Collection)" clip_to_extent="1" tags="Sources,point" alpha="1" type="marker" force_rhr="0">
-      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="marker" name="CMT (Pitch Collection)" tags="Sources,point">
+      <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
         <prop v="0" k="angle"/>
         <prop v="0,0,0,255" k="color"/>
         <prop v="1" k="horizontal_anchor_point"/>
@@ -79,13 +79,13 @@
         <prop v="1" k="vertical_anchor_point"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
-      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+      <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
         <prop v="90" k="angle"/>
         <prop v="255,0,0,255" k="color"/>
         <prop v="1" k="horizontal_anchor_point"/>
@@ -106,43 +106,15 @@
         <prop v="1" k="vertical_anchor_point"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="Cave" clip_to_extent="1" tags="Sources,SVG" alpha="1" type="marker" force_rhr="0">
-      <layer class="SvgMarker" enabled="1" locked="0" pass="0">
-        <prop v="0" k="angle"/>
-        <prop v="243,166,178,255" k="color"/>
-        <prop v="0" k="fixedAspectRatio"/>
-        <prop v="1" k="horizontal_anchor_point"/>
-        <prop v="C:/Users/Joseph/Work/SourcesArchaeology/MappingAssets/Cave.svg" k="name"/>
-        <prop v="0,0" k="offset"/>
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-        <prop v="MM" k="offset_unit"/>
-        <prop v="35,35,35,255" k="outline_color"/>
-        <prop v="0" k="outline_width"/>
-        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-        <prop v="MM" k="outline_width_unit"/>
-        <prop v="diameter" k="scale_method"/>
-        <prop v="7" k="size"/>
-        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-        <prop v="MM" k="size_unit"/>
-        <prop v="1" k="vertical_anchor_point"/>
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" type="QString" value=""/>
-            <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
-          </Option>
-        </data_defined_properties>
-      </layer>
-    </symbol>
-    <symbol name="Ethnographic Site" clip_to_extent="1" tags="Sources,point" alpha="1" type="marker" force_rhr="0">
-      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="marker" name="Ethnographic Site" tags="Sources,point">
+      <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
         <prop v="0" k="angle"/>
         <prop v="135,191,98,255" k="color"/>
         <prop v="1" k="horizontal_anchor_point"/>
@@ -163,24 +135,25 @@
         <prop v="1" k="vertical_anchor_point"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="Fire Pit" clip_to_extent="1" tags="Sources,SVG" alpha="1" type="marker" force_rhr="0">
-      <layer class="SvgMarker" enabled="1" locked="0" pass="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="marker" name="Falling Corner" tags="Sources,point">
+      <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
         <prop v="0" k="angle"/>
-        <prop v="141,90,153,255" k="color"/>
-        <prop v="0" k="fixedAspectRatio"/>
+        <prop v="255,255,255,255" k="color"/>
         <prop v="1" k="horizontal_anchor_point"/>
-        <prop v="C:/Users/Joseph/Work/SourcesArchaeology/MappingAssets/FirePit.svg" k="name"/>
+        <prop v="miter" k="joinstyle"/>
+        <prop v="square" k="name"/>
         <prop v="0,0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
         <prop v="MM" k="offset_unit"/>
-        <prop v="35,35,35,255" k="outline_color"/>
+        <prop v="0,0,0,255" k="outline_color"/>
+        <prop v="solid" k="outline_style"/>
         <prop v="0" k="outline_width"/>
         <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
         <prop v="MM" k="outline_width_unit"/>
@@ -191,15 +164,48 @@
         <prop v="1" k="vertical_anchor_point"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </data_defined_properties>
+      </layer>
+      <layer enabled="1" pass="0" class="FontMarker" locked="0">
+        <prop v="0" k="angle"/>
+        <prop v="A" k="chr"/>
+        <prop v="0,0,0,255" k="color"/>
+        <prop v="Dingbats" k="font"/>
+        <prop v="" k="font_style"/>
+        <prop v="1" k="horizontal_anchor_point"/>
+        <prop v="bevel" k="joinstyle"/>
+        <prop v="0,0" k="offset"/>
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+        <prop v="MM" k="offset_unit"/>
+        <prop v="35,35,35,255" k="outline_color"/>
+        <prop v="0" k="outline_width"/>
+        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+        <prop v="MM" k="outline_width_unit"/>
+        <prop v="3.4" k="size"/>
+        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+        <prop v="MM" k="size_unit"/>
+        <prop v="1" k="vertical_anchor_point"/>
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option type="Map" name="properties">
+              <Option type="Map" name="char">
+                <Option value="true" type="bool" name="active"/>
+                <Option value="code" type="QString" name="field"/>
+                <Option value="2" type="int" name="type"/>
+              </Option>
+            </Option>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="Historic Structure" clip_to_extent="1" tags="Sources,point" alpha="1" type="marker" force_rhr="0">
-      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="marker" name="Historic Structure" tags="Sources,point">
+      <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
         <prop v="0" k="angle"/>
         <prop v="35,96,46,255" k="color"/>
         <prop v="1" k="horizontal_anchor_point"/>
@@ -220,177 +226,38 @@
         <prop v="1" k="vertical_anchor_point"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="Karst" clip_to_extent="1" tags="Sources,SVG" alpha="1" type="marker" force_rhr="0">
-      <layer class="SvgMarker" enabled="1" locked="0" pass="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="marker" name="Historic Tree Feature" tags="Sources,point">
+      <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
         <prop v="0" k="angle"/>
-        <prop v="164,113,88,255" k="color"/>
-        <prop v="0" k="fixedAspectRatio"/>
+        <prop v="135,191,98,255" k="color"/>
         <prop v="1" k="horizontal_anchor_point"/>
-        <prop v="C:/Users/Joseph/Work/SourcesArchaeology/MappingAssets/Karst.svg" k="name"/>
+        <prop v="bevel" k="joinstyle"/>
+        <prop v="triangle" k="name"/>
         <prop v="0,0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
         <prop v="MM" k="offset_unit"/>
-        <prop v="35,35,35,255" k="outline_color"/>
+        <prop v="0,0,0,255" k="outline_color"/>
+        <prop v="solid" k="outline_style"/>
         <prop v="0" k="outline_width"/>
         <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
         <prop v="MM" k="outline_width_unit"/>
         <prop v="diameter" k="scale_method"/>
-        <prop v="7" k="size"/>
+        <prop v="3" k="size"/>
         <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
         <prop v="MM" k="size_unit"/>
         <prop v="1" k="vertical_anchor_point"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
-          </Option>
-        </data_defined_properties>
-      </layer>
-    </symbol>
-    <symbol name="Natural Exposure/Treethrow (Negative)" clip_to_extent="1" tags="Sources,SVG" alpha="1" type="marker" force_rhr="0">
-      <layer class="SvgMarker" enabled="1" locked="0" pass="0">
-        <prop v="0" k="angle"/>
-        <prop v="255,255,255,255" k="color"/>
-        <prop v="0" k="fixedAspectRatio"/>
-        <prop v="1" k="horizontal_anchor_point"/>
-        <prop v="C:/Users/Joseph/Work/SourcesArchaeology/MappingAssets/NaturalExposureTreethrow.svg" k="name"/>
-        <prop v="0,0" k="offset"/>
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-        <prop v="MM" k="offset_unit"/>
-        <prop v="0,0,0,255" k="outline_color"/>
-        <prop v="0.2" k="outline_width"/>
-        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-        <prop v="MM" k="outline_width_unit"/>
-        <prop v="diameter" k="scale_method"/>
-        <prop v="7" k="size"/>
-        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-        <prop v="MM" k="size_unit"/>
-        <prop v="1" k="vertical_anchor_point"/>
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" type="QString" value=""/>
-            <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
-          </Option>
-        </data_defined_properties>
-      </layer>
-    </symbol>
-    <symbol name="Natural Exposure/Treethrow (Positive)" clip_to_extent="1" tags="Sources,SVG" alpha="1" type="marker" force_rhr="0">
-      <layer class="SvgMarker" enabled="1" locked="0" pass="0">
-        <prop v="0" k="angle"/>
-        <prop v="0,0,0,255" k="color"/>
-        <prop v="0" k="fixedAspectRatio"/>
-        <prop v="1" k="horizontal_anchor_point"/>
-        <prop v="C:/Users/Joseph/Work/SourcesArchaeology/MappingAssets/NaturalExposureTreethrow.svg" k="name"/>
-        <prop v="0,0" k="offset"/>
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-        <prop v="MM" k="offset_unit"/>
-        <prop v="0,0,0,255" k="outline_color"/>
-        <prop v="0.2" k="outline_width"/>
-        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-        <prop v="MM" k="outline_width_unit"/>
-        <prop v="diameter" k="scale_method"/>
-        <prop v="7.6" k="size"/>
-        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-        <prop v="MM" k="size_unit"/>
-        <prop v="1" k="vertical_anchor_point"/>
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" type="QString" value=""/>
-            <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
-          </Option>
-        </data_defined_properties>
-      </layer>
-    </symbol>
-    <symbol name="Overhang" clip_to_extent="1" tags="Sources,SVG" alpha="1" type="marker" force_rhr="0">
-      <layer class="SvgMarker" enabled="1" locked="0" pass="0">
-        <prop v="0" k="angle"/>
-        <prop v="114,155,111,255" k="color"/>
-        <prop v="0" k="fixedAspectRatio"/>
-        <prop v="1" k="horizontal_anchor_point"/>
-        <prop v="C:/Users/Joseph/Work/SourcesArchaeology/MappingAssets/Overhang.svg" k="name"/>
-        <prop v="0,0" k="offset"/>
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-        <prop v="MM" k="offset_unit"/>
-        <prop v="35,35,35,255" k="outline_color"/>
-        <prop v="0" k="outline_width"/>
-        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-        <prop v="MM" k="outline_width_unit"/>
-        <prop v="diameter" k="scale_method"/>
-        <prop v="7" k="size"/>
-        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-        <prop v="MM" k="size_unit"/>
-        <prop v="1" k="vertical_anchor_point"/>
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" type="QString" value=""/>
-            <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
-          </Option>
-        </data_defined_properties>
-      </layer>
-    </symbol>
-    <symbol name="Shipwreck Site" clip_to_extent="1" tags="Sources,SVG" alpha="1" type="marker" force_rhr="0">
-      <layer class="SvgMarker" enabled="1" locked="0" pass="0">
-        <prop v="0" k="angle"/>
-        <prop v="255,255,255,255" k="color"/>
-        <prop v="0" k="fixedAspectRatio"/>
-        <prop v="1" k="horizontal_anchor_point"/>
-        <prop v="C:/Users/Joseph/Work/SourcesArchaeology/MappingAssets/ShipwreckSite.svg" k="name"/>
-        <prop v="0,0" k="offset"/>
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-        <prop v="MM" k="offset_unit"/>
-        <prop v="0,0,0,255" k="outline_color"/>
-        <prop v="0.2" k="outline_width"/>
-        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-        <prop v="MM" k="outline_width_unit"/>
-        <prop v="diameter" k="scale_method"/>
-        <prop v="7" k="size"/>
-        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-        <prop v="MM" k="size_unit"/>
-        <prop v="1" k="vertical_anchor_point"/>
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" type="QString" value=""/>
-            <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
-          </Option>
-        </data_defined_properties>
-      </layer>
-    </symbol>
-    <symbol name="Sinkhole" clip_to_extent="1" tags="Sources,SVG" alpha="1" type="marker" force_rhr="0">
-      <layer class="SvgMarker" enabled="1" locked="0" pass="0">
-        <prop v="0" k="angle"/>
-        <prop v="255,255,255,255" k="color"/>
-        <prop v="0" k="fixedAspectRatio"/>
-        <prop v="1" k="horizontal_anchor_point"/>
-        <prop v="C:/Users/Joseph/Work/SourcesArchaeology/MappingAssets/Sinkhole.svg" k="name"/>
-        <prop v="0,0" k="offset"/>
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-        <prop v="MM" k="offset_unit"/>
-        <prop v="0,0,0,255" k="outline_color"/>
-        <prop v="1" k="outline_width"/>
-        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-        <prop v="MM" k="outline_width_unit"/>
-        <prop v="diameter" k="scale_method"/>
-        <prop v="7" k="size"/>
-        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-        <prop v="MM" k="size_unit"/>
-        <prop v="1" k="vertical_anchor_point"/>
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" type="QString" value=""/>
-            <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>

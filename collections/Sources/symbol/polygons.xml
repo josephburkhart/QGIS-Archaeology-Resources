@@ -1,8 +1,8 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol force_rhr="0" type="fill" tags="Sources,polygon" clip_to_extent="1" alpha="1" name="Falling Boundary/Development Area (polygon)">
-      <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Falling Boundary/Development Area (polygon)" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleLine" locked="0">
         <prop v="0" k="align_dash_pattern"/>
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -26,15 +26,15 @@
         <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol force_rhr="0" type="fill" tags="Sources,polygon" clip_to_extent="1" alpha="1" name="Legal Boundary (polygon)">
-      <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Legal Boundary (polygon)" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleLine" locked="0">
         <prop v="0" k="align_dash_pattern"/>
         <prop v="square" k="capstyle"/>
         <prop v="2;2" k="customdash"/>
@@ -58,15 +58,91 @@
         <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol force_rhr="0" type="fill" tags="Sources,polygon" clip_to_extent="1" alpha="1" name="Retention">
-      <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Post-1846 TUS Bounds (version 1)" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleLine" locked="0">
+        <prop v="0" k="align_dash_pattern"/>
+        <prop v="square" k="capstyle"/>
+        <prop v="2.5;2.5" k="customdash"/>
+        <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+        <prop v="MM" k="customdash_unit"/>
+        <prop v="0" k="dash_pattern_offset"/>
+        <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+        <prop v="MM" k="dash_pattern_offset_unit"/>
+        <prop v="0" k="draw_inside_polygon"/>
+        <prop v="bevel" k="joinstyle"/>
+        <prop v="4,61,25,255" k="line_color"/>
+        <prop v="solid" k="line_style"/>
+        <prop v="0.6" k="line_width"/>
+        <prop v="MM" k="line_width_unit"/>
+        <prop v="0" k="offset"/>
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+        <prop v="MM" k="offset_unit"/>
+        <prop v="0" k="ring_filter"/>
+        <prop v="0" k="tweak_dash_pattern_on_corners"/>
+        <prop v="1" k="use_custom_dash"/>
+        <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Post-1846 TUS Bounds (version 2)" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+        <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+        <prop v="255,255,255,128" k="color"/>
+        <prop v="bevel" k="joinstyle"/>
+        <prop v="0,0" k="offset"/>
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+        <prop v="MM" k="offset_unit"/>
+        <prop v="35,35,35,255" k="outline_color"/>
+        <prop v="no" k="outline_style"/>
+        <prop v="0.26" k="outline_width"/>
+        <prop v="MM" k="outline_width_unit"/>
+        <prop v="solid" k="style"/>
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Previously-Logged Area" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+        <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+        <prop v="255,240,194,128" k="color"/>
+        <prop v="bevel" k="joinstyle"/>
+        <prop v="0,0" k="offset"/>
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+        <prop v="MM" k="offset_unit"/>
+        <prop v="35,35,35,255" k="outline_color"/>
+        <prop v="no" k="outline_style"/>
+        <prop v="0.6" k="outline_width"/>
+        <prop v="MM" k="outline_width_unit"/>
+        <prop v="solid" k="style"/>
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Retention" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleFill" locked="0">
         <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
         <prop v="153,204,153,255" k="color"/>
         <prop v="round" k="joinstyle"/>
@@ -80,15 +156,37 @@
         <prop v="solid" k="style"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol force_rhr="0" type="fill" tags="Sources,polygon" clip_to_extent="1" alpha="1" name="Site Bounds (Inferred)">
-      <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Shovel Test Area" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+        <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+        <prop v="0,0,0,255" k="color"/>
+        <prop v="round" k="joinstyle"/>
+        <prop v="0,0" k="offset"/>
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+        <prop v="MM" k="offset_unit"/>
+        <prop v="35,35,35,255" k="outline_color"/>
+        <prop v="dash" k="outline_style"/>
+        <prop v="0.6" k="outline_width"/>
+        <prop v="MM" k="outline_width_unit"/>
+        <prop v="b_diagonal" k="style"/>
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Site Bounds (Inferred)" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleLine" locked="0">
         <prop v="0" k="align_dash_pattern"/>
         <prop v="round" k="capstyle"/>
         <prop v="2.5;2.5;2.5;2.5;0;5" k="customdash"/>
@@ -112,13 +210,13 @@
         <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
-      <layer pass="0" class="MarkerLine" enabled="1" locked="0">
+      <layer enabled="1" pass="0" class="MarkerLine" locked="0">
         <prop v="4" k="average_angle_length"/>
         <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale"/>
         <prop v="MM" k="average_angle_unit"/>
@@ -136,13 +234,13 @@
         <prop v="1" k="rotate"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <symbol force_rhr="0" type="marker" clip_to_extent="1" alpha="1" name="@Site Bounds (Inferred)@1">
-          <layer pass="0" class="FontMarker" enabled="1" locked="0">
+        <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="marker" name="@Site Bounds (Inferred)@1">
+          <layer enabled="1" pass="0" class="FontMarker" locked="0">
             <prop v="0" k="angle"/>
             <prop v="?" k="chr"/>
             <prop v="255,0,0,255" k="color"/>
@@ -163,17 +261,17 @@
             <prop v="1" k="vertical_anchor_point"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option type="QString" name="name" value=""/>
+                <Option value="" type="QString" name="name"/>
                 <Option name="properties"/>
-                <Option type="QString" name="type" value="collection"/>
+                <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
           </layer>
         </symbol>
       </layer>
     </symbol>
-    <symbol force_rhr="0" type="fill" tags="Sources,polygon" clip_to_extent="1" alpha="1" name="TUS Bounds (Post-1846)">
-      <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="TUS Bounds (Post-1846)" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleLine" locked="0">
         <prop v="0" k="align_dash_pattern"/>
         <prop v="square" k="capstyle"/>
         <prop v="2.5;2.5" k="customdash"/>
@@ -197,15 +295,15 @@
         <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol force_rhr="0" type="fill" tags="Sources,polygon" clip_to_extent="1" alpha="1" name="Vegetation">
-      <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+    <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="Vegetation" tags="Sources,polygon">
+      <layer enabled="1" pass="0" class="SimpleFill" locked="0">
         <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
         <prop v="102,155,50,255" k="color"/>
         <prop v="round" k="joinstyle"/>
@@ -219,13 +317,13 @@
         <prop v="solid" k="style"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
       </layer>
-      <layer pass="0" class="PointPatternFill" enabled="1" locked="0">
+      <layer enabled="1" pass="0" class="PointPatternFill" locked="0">
         <prop v="1.8" k="displacement_x"/>
         <prop v="3x:0,0,0,0,0,0" k="displacement_x_map_unit_scale"/>
         <prop v="MM" k="displacement_x_unit"/>
@@ -248,13 +346,13 @@
         <prop v="MM" k="outline_width_unit"/>
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <symbol force_rhr="0" type="marker" clip_to_extent="1" alpha="1" name="@Vegetation@1">
-          <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="marker" name="@Vegetation@1">
+          <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
             <prop v="0" k="angle"/>
             <prop v="0,0,0,255" k="color"/>
             <prop v="1" k="horizontal_anchor_point"/>
@@ -275,9 +373,9 @@
             <prop v="1" k="vertical_anchor_point"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option type="QString" name="name" value=""/>
+                <Option value="" type="QString" name="name"/>
                 <Option name="properties"/>
-                <Option type="QString" name="type" value="collection"/>
+                <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
           </layer>

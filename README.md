@@ -16,7 +16,7 @@ The symbol sets in this repository are compatible with QGIS versions 3.16 and la
 ## Usage
 To access this repository from the QGIS Resource Sharing plugin, follow the steps below (may differ slightly depending on OS and QGIS version):
 
-1. In the Resource Sharing plugin window, go to `Settings > Add repository`, enter the following URL: https://github.com/josephburkhart/QGIS-Archaeology-Resources.git, give it a name (e.g., 'Archaeology Resources'), and click `OK`.
+1. In the Resource Sharing plugin window, go to `Settings > Add repository`, enter the URL https://github.com/josephburkhart/QGIS-Archaeology-Resources.git, give it a name (e.g., 'Archaeology Resources'), and click `OK`.
 2. If the repository was successfully added, go to `All Collections` and search for "archaeology" or similar to bring up the collections from this repository.
 3. Click `Install` to download and install the collections you want.
 4. The symbols in the installed collections should now be visible in your Style Manager. SVGs can be accessed from the standard SVG search widget shown in the Layer Properties window at `Symbology > SVG symbol`.

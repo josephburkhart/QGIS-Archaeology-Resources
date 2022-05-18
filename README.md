@@ -20,4 +20,4 @@ To access this repository from the QGIS Resource Sharing plugin, follow the step
 2. If the repository was successfully added, go to `All Collections` and search for "archaeology" or similar to bring up the collections from this repository.
 3. Click `Install` to download and install the collections you want.
 4. The symbols in the installed collections should now be visible in your Style Manager. SVGs can be accessed from the standard SVG search widget shown in the Layer Properties window at `Symbology > SVG symbol`.
-5. To update your installed collections to match the current version of this repository, in the Resource Sharing plugin window go to `Installed Collections > Reinstall`.
+5. To update your installed collections to match the current version of this repository, in the Resource Sharing plugin window go to `Installed Collections` and click `Reinstall`.

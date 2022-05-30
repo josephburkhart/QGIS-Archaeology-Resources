@@ -23,7 +23,7 @@ To access this repository from the QGIS Resource Sharing plugin, follow the step
 5. To update your installed collections to match the current version of this repository, in the Resource Sharing plugin window go to `Installed Collections` and click `Reinstall`.
 
 ## Contents
-This repository contains the following collections: BCAB and Sources,
+This repository contains the following collections: BCAB and Sources.
 
 ### BCAB
 This collection contains resources that satisfy the mapping requirements of the [BC government's Archaeology Branch](https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/archaeology). The contents are summarized below:

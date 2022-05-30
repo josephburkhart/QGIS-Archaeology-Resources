@@ -31,7 +31,7 @@ This collection contains resources that satisfy the mapping requirements of the 
 - `symbol`: QGIS symbols (XML format) matching the symbols given in the Archaeology Branch's [Mapping & Spatial Requirements (V.4) [June 23, 2021]](https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/natural-resource-use/archaeology/forms-publications/mapping_and_spatial_requirements.pdf)
 
 ### Sources
-This collection contains resources that satisfy internal mapping standards at [Sources Archaeological and Heritage Research, Inc.](www.sourcesarch.com). The contents are summarized below:
+This collection contains resources that satisfy internal mapping standards at [Sources Archaeological and Heritage Research, Inc](www.sourcesarch.com). The contents are summarized below:
 
 - `color`: standard color palette (GIMP Palette Format - can be imported into QGIS)
 - `layout`: QGIS layout template files (letter/tabloid sizes, landscape/portrait orientations, with/without inset maps)

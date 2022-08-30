@@ -40,3 +40,14 @@ This collection contains resources that satisfy internal mapping standards at [S
 - `svg`: SVG image files for use as symbols in QGIS
   - Note: the files in this directory are licensed differently from all other files in this repository.
 - `symbol`: QGIS symbols (XML format) that match symbols commonly used in Sources maps
+
+### Joseph
+This collection contains various python scripts that I use in personal archaeological work. The contents are summarized below:
+
+1. `create-small-grid.py`: This script takes an input layer and generates a small n x n grid inside each input layer feature. Each output grid cell is given a unique grid ID value that includes the parent input feature's grid ID. This script was used to create the minor reference grid in my Master's thesis.
+2. `clean-grid-cell-location-list.py`: This script takes a csv file of intersections between two layers and condenses the labels in one column into a list based on duplicate values in another column. It then sorts the lists by ascending feature ID values.
+3. `sort-long-grid-cell-location.py`: This script sorts long-form grid cell location IDs by row, column, and then number.
+4. `shorten-grid-cell-location.py`: This script takes a list of long-form grid cell IDs and abbreviates them to a more human-readable format.
+5. `max-side-length.py`: This script takes a polygon feature and calculates the length of the longest side. (Intended for use in the QGIS Field Calculator.)
+6. `top-left-rotation.py`: This script takes a polygon feature and calculates the angle of its top-left side. (Intended for use in the QGIS Field Calculator.)
+7. `calculate-utm-coordinates.py`: This script takes a vector layer, calculates the utm Easting and Northing for each feature, and adds that information to the feature's metadata under a new field.

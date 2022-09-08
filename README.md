@@ -51,3 +51,4 @@ This collection contains various python scripts that I use in personal archaeolo
 5. `max-side-length.py`: This script takes a polygon feature and calculates the length of the longest side. (Intended for use in the QGIS Field Calculator.)
 6. `top-left-rotation.py`: This script takes a polygon feature and calculates the angle of its top-left side. (Intended for use in the QGIS Field Calculator.)
 7. `calculate-utm-coordinates.py`: This script takes a vector layer, calculates the utm Easting and Northing for each feature, and adds that information to the feature's metadata under a new field.
+8. `calculate_hard_ties.py`: This script takes a vector layer (features) and a selected point (reference point), and then creates hard-ties for each feature. Each hard-tie has a description field that specifies the distance and bearing (relative to True North) from the reference point to the feature.

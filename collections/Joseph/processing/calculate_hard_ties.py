@@ -118,11 +118,47 @@ def create_hard_tie(from_pt, to_pt, desc,  from_text, to_text, layer, project_in
     layer.updateExtents()                           #update layer extents based on the new info in the data provider
     project_instance.addMapLayers([layer])     #add updated layer to the qgis project instance
 
+def reproject_layer(layer, out_crs, proj_inst, add_to_iface=False):
+    """
+    Returns a copy of `layer` reprojected into `out_crs`
+    If `add_to_iface` is True, also loads the reprojected layer into the active
+    interface
+    """
+    # Input features
+    in_feats = layer.getFeatures()
+    
+    # Initialize transformation
+    t = QgsCoordinateTransform(layer.crs(), out_crs, proj_inst)
+    
+    # Initialize output layer
+    geomtype = QgsWkbTypes.displayString(layer.wkbType())
+    uri = geomtype+'?crs='+proj_inst.crs().authid()
+    name = layer.name()+'_reprojected'
+    layer_rpj = QgsVectorLayer(uri, name, 'memory')
+    out_feats = []
+    
+    # Copy fields over
+    layer_rpj.dataProvider().addAttributes(layer.fields())
+    layer_rpj.updateFields()
+
+    # Reproject
+    for f in in_feats:
+        geom = f.geometry()
+        geom.transform(t)
+        f.setGeometry(geom)
+        out_feats.append(f)
+    
+    layer_rpj.dataProvider().addFeatures(out_feats)
+    
+    if add_to_iface:
+        proj_inst.addMapLayer(layer_rpj, addToLegend=True)
+    
+    return layer_rpj
 
 # User inputs
 feature_layer_name = "New scratch layer"
 feature_id_field = "name"
-reference_layer_name = "ReferencePoints"
+reference_layer_name = "ReferencePoints2"
 reference_id_field = "RPID"
 
 # Project variables
@@ -132,13 +168,27 @@ proj_crs_code = str(proj_crs)[-10:-1]
 
 # Get feature layer
 feature_layer = project_instance.mapLayersByName(feature_layer_name)[0]
-    
+
+# Get reference point layer
+reference_layer = project_instance.mapLayersByName(reference_layer_name)[0]
+
+# Make sure feature and reference point layers are in the project CRS
+# (reproject if necessary)
+if reference_layer.crs() != proj_crs:
+    print("Warning: reference point layer not in project crs. Reprojecting and continuing...")
+    select_id = reference_layer.selectedFeatures()[0][reference_id_field]
+    reference_layer = reproject_layer(reference_layer, proj_crs, proj_inst)
+    reference_layer.selectByExpression(f"\"{reference_id_field}\" = '{select_id}'")
+
+if feature_layer.crs() != proj_crs:
+    print("Warning: feature layer not in project crs. Reprojecting and continuing...")
+    feature_layer = reproject_layer(feature_layer, proj_crs, proj_inst)
+
 # Get features
 print(f"Hard-ties will be determined for all features in '{feature_layer_name}'")
 features = feature_layer.getFeatures()
 
 # Get reference points
-reference_layer = project_instance.mapLayersByName(reference_layer_name)[0]
 ref_pt = reference_layer.selectedFeatures()[0]
 ref_pt_name = ref_pt[reference_id_field]
 

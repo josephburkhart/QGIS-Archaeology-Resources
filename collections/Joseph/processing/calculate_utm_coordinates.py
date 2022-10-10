@@ -1,5 +1,5 @@
-# Takes an input layer, create a new field, and populate it with UTM coordinates
-# in the format [zone] [easting] E, [northing] N
+# Take an input layer, create a new field `UTM_Coord`, and populate it with
+# UTM coordinates in the format `[utm zone] [easting] E, [northing] N`
 
 # Note that this script is currently configured to only use CSRS coordinate
 # systems.

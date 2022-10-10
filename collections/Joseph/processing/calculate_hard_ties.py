@@ -119,27 +119,28 @@ def create_hard_tie(from_pt, to_pt, desc,  from_text, to_text, layer, project_in
     project_instance.addMapLayers([layer])     #add updated layer to the qgis project instance
 
 
-
+# User inputs
+feature_layer_name = "New scratch layer"
+feature_id_field = "name"
+reference_layer_name = "ReferencePoints"
+reference_id_field = "RPID"
 
 # Project variables
 project_instance =  QgsProject.instance()
 proj_crs = project_instance.crs()
 proj_crs_code = str(proj_crs)[-10:-1]
 
-# Get feature layer (user has to input an existing layer name)
-feature_layer_name = "temp"
+# Get feature layer
 feature_layer = project_instance.mapLayersByName(feature_layer_name)[0]
-feature_field = "name"
     
 # Get features
 print(f"Hard-ties will be determined for all features in '{feature_layer_name}'")
 features = feature_layer.getFeatures()
 
 # Get reference points
-ref_layer = project_instance.mapLayersByName("ReferencePoints")[0]
-ref_field = "RPID"
+reference_layer = project_instance.mapLayersByName(reference_layer_name)[0]
 ref_pt = ref_layer.selectedFeatures()[0]
-ref_pt_name = ref_pt[ref_field]
+ref_pt_name = ref_pt[reference_id_field]
 
 # Create output layer
 url = f"Linestring?crs={proj_crs_code}&field=To:string(100)&field=From:string(100)&field=Desc:string(200)"
@@ -149,5 +150,5 @@ output_layer = QgsVectorLayer(url, f"Hard-ties from {ref_pt_name}", "memory")
 for f in features:
     desc = calculate_hard_tie(ref_pt, ref_field, f, project_instance)
     from_text = ref_pt_name
-    to_text = f[feature_field]
+    to_text = f[feature_id_field]
     create_hard_tie(ref_pt, f, desc, from_text, to_text, output_layer, project_instance)

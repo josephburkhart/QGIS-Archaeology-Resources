@@ -1,8 +1,11 @@
 # Take an input layer, create a new field `UTM_Coord`, and populate it with
 # UTM coordinates in the format `[utm zone] [easting] E, [northing] N`
 
+# The input layer is the currently selected layer. This can be changed by 
+# adjusting `layer` in line 103 below.
+
 # Note that this script is currently configured to only use CSRS coordinate
-# systems.
+# systems. This can be changed by adjusting `query` in line 91 below.
 
 # Useful links:
 #   https://www.geodose.com/2018/09/qgis-python-tutorial-add-field-attribute.html

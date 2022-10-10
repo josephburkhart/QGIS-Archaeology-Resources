@@ -114,6 +114,8 @@ features = layer.getFeatures()
 project_instance =  QgsProject.instance()
 output_field_name= 'UTMCoord'
 
+p = 1         #number of decimal places for the utm coordinates
+
 # Check if layer has field 'UTMCoord', and if not then create the field
 layer.startEditing()
 field_names = layer.fields().names()
@@ -132,7 +134,7 @@ for f in features:
     # Determine UTM zone and destination CRS
     latlong = find_latlong('return_point', f, layer, project_instance)
     utmzone = latlong_to_utmzone(latlong)
-    utm_crs= utmzone_to_crs_list(utmzone)[0]   #just use the first item
+    utm_crs= utmzone_to_crs_list(utmzone)[0]   #just use the first result
     
     # Set transform settings
     source_crs = layer.sourceCrs()
@@ -145,8 +147,13 @@ for f in features:
     geom2.transform(tr)
     
     # Construct the output string
+    #     for help with string formatting, see these resources:
+    #        https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python
+    #        https://stackoverflow.com/questions/45310254/fixed-digits-after-decimal-with-f-strings
     point = geom2.asPoint()
-    utm_coord = str(utmzone[0])+utmzone[1]+' '+str(int(round(point.x(),0)))+' E '+str(int(round(point.y(),0)))+' N'
+    x = point.x()
+    y = point.y()
+    utm_coord =f"{utmzone[0]}{utmzone[1]} {x:#.{p}f} E {y:#.{p}f} N"
     
     # Update the feature's attribute value
     attr_value_dict = {output_field_id:utm_coord}

@@ -16,7 +16,6 @@ def find_latlong(output, feature, layer, project_instance):
     """
     Takes an input point geometry and returns a copy of it transformed to EPSG
     4326 as latitude and longitude coordinates
-    Note that the additional context parameter provides access to additional info
     Ref: https://gis.stackexchange.com/questions/349585/reprojecting-qgspointxy
     Ref: https://gis.stackexchange.com/questions/215550/getting-parent-layer-of-feature-in-qgis-pyqgis-custom-function
     Ref: https://github.com/qgis/QGIS/issues/41695
@@ -24,11 +23,7 @@ def find_latlong(output, feature, layer, project_instance):
     # Convert geometry into a point
     geom = feature.geometry()
 
-    # Prepare crs instances
-    #parent_layer_id = context.variable("layer_id")
-    #parent_layer = QgsProject.instance().mapLayersByName(parent_layer_id)[0]
-    #source_crs = parent_layer.sourceCRS
-    
+    # Initialize crs and transformation instances
     source_crs = layer.sourceCrs()
     dest_crs = QgsCoordinateReferenceSystem(4326)
     tr = QgsCoordinateTransform(source_crs, dest_crs, project_instance)
@@ -38,6 +33,7 @@ def find_latlong(output, feature, layer, project_instance):
     geom2.transform(tr)
     latlong = geom2.asPoint()
     
+    # Return latitude and longitude as coordinates
     if output=='return_string':
         return str(latlong[0])+', '+str(latlong[1])
     elif output=='return_list':
@@ -97,14 +93,7 @@ def utmzone_to_crs_list(utmzone):
     print('query results: '+str(rows))
     
     return rows
-    
-#def choose_crs_best_match(list, feature):
-#    """
-#    pick a crs whose center is closest to feature and which is most up-to-date
-#    """
-#    pass
-    
-    
+
 
 ### Main code
 # Inputs
@@ -147,9 +136,9 @@ for f in features:
     geom2.transform(tr)
     
     # Construct the output string
-    #     for help with string formatting, see these resources:
-    #        https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python
-    #        https://stackoverflow.com/questions/45310254/fixed-digits-after-decimal-with-f-strings
+    #   for help with string formatting, see these resources:
+    #       https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python
+    #       https://stackoverflow.com/questions/45310254/fixed-digits-after-decimal-with-f-strings
     point = geom2.asPoint()
     x = point.x()
     y = point.y()

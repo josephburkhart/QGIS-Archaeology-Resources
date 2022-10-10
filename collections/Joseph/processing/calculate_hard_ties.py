@@ -139,7 +139,7 @@ features = feature_layer.getFeatures()
 
 # Get reference points
 reference_layer = project_instance.mapLayersByName(reference_layer_name)[0]
-ref_pt = ref_layer.selectedFeatures()[0]
+ref_pt = reference_layer.selectedFeatures()[0]
 ref_pt_name = ref_pt[reference_id_field]
 
 # Create output layer
@@ -148,7 +148,7 @@ output_layer = QgsVectorLayer(url, f"Hard-ties from {ref_pt_name}", "memory")
 
 # Calculate hard-ties
 for f in features:
-    desc = calculate_hard_tie(ref_pt, ref_field, f, project_instance)
+    desc = calculate_hard_tie(ref_pt, reference_id_field, f, project_instance)
     from_text = ref_pt_name
     to_text = f[feature_id_field]
     create_hard_tie(ref_pt, f, desc, from_text, to_text, output_layer, project_instance)

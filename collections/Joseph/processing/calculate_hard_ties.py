@@ -1,6 +1,19 @@
 # This script calculates expected hard-ties relative to True North for
 # a set of specified features and a single specified reference point
 
+# Usage:
+#   1. In the layer that contains your reference points, select the feature you
+#      want to use as the reference point for your hard-ties
+#   2. In the code below, edit the following variables according to your needs:
+#       - feat_layer_name   --> name of the layer with the features you want to
+#                               calculate hard-ties to
+#       - feat_id_field     --> name of the field with unique ids in your
+#                               feature layer
+#       - ref_layer_name    --> name of the layer with the reference points you
+#                               want to calculate hard-ties to
+#       - ref_id_field      --> name of the field with unique ids in your
+#                               reference points layer
+
 from qgis.core import *
 from qgis.gui import *
 import math as m
